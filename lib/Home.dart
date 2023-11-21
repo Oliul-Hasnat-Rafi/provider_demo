@@ -27,9 +27,12 @@ class _HomeState extends State<Home> {
         ),
         body: Column(
           children: [
-            Text(
-              Updatecountmodel.number.last.toString(),
-              style: TextStyle(fontSize: Updatecountmodel.fontsize, color: Colors.black),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                Updatecountmodel.number.last.toString(),
+                style: TextStyle(fontSize: Updatecountmodel.fontsize, color: Colors.black),
+              ),
             ),
 
             Slider(
